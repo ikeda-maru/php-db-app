@@ -99,6 +99,7 @@ try {
           <th>単価</th>
           <th>在庫数</th>
           <th>仕入先コード</th>
+          <th>編集</th>
         </tr>
         <?php
         // 配列の中身を順番に取り出し、表形式で出力する
@@ -110,6 +111,7 @@ try {
             <td>{$product['price']}</td>
             <td>{$product['stock_quantity']}</td>
             <td>{$product['vendor_code']}</td>
+            <td><a href='update.php?id={$product['id']}'><img src='images/edit.png' alt='編集' class='edit-icon'></a></td>
             </tr>
           ";
           echo $table_row;

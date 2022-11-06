@@ -167,6 +167,11 @@ footer {
   color: #28a745;
 }
 
+.edit-icon {
+  height: 1.5rem;
+  vertical-align: top;
+}
+
 /* create.php */
 .registration {
   box-sizing: border-box;
