@@ -71,6 +71,12 @@ try {
   <main>
     <article class="products">
       <h1>商品一覧</h1>
+      <?php
+      // (商品の登録・編集・削除後)messageパラメータの値を受け取っていれば、それを表示する
+      if (isset($_GET['message'])) {
+        echo "<p class='success'>{$_GET['message']}</p>";
+      }
+      ?>
       <div class="products-ui">
         <div>
           <a href="read.php?order=desc&keyword=<?= $keyword ?>">
@@ -84,7 +90,7 @@ try {
             <input type="text" class="search-box" placeholder="商品名で検索" name="keyword" value="<?= $keyword ?>">
           </form>
         </div>
-        <a href="#" class="btn">商品登録</a>
+        <a href="create.php" class="btn">商品登録</a>
       </div>
       <table class="products-table">
         <tr>
