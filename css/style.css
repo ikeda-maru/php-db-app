@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Noto Sans JP", sans-serif;
-  color: #fff;
+  color: #111;
 }
 
 header {
@@ -78,5 +78,52 @@ footer {
   font-size: 0.875rem;
   line-height: 3.5rem;
   color: #555;
+  text-align: center;
+}
+
+/* read.php */
+.products {
+  box-sizing: border-box;
+  min-height: calc(100vh - 7rem);
+  padding: 1.75rem 0 3.5rem;
+}
+
+.products h1 {
+  margin: 0 0 1.75rem;
+  font-size: 1.75rem;
+}
+
+.products-ui {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 0 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.products-table {
+  width: 100%;
+  margin: 0 auto;
+  word-break: break-all;
+  border-collapse: collapse;
+}
+
+.products-table tr {
+  border-bottom: solid 1px #d9d9d9;
+}
+
+.products-table tr:first-child {
+  border-bottom: solid 3px #d9d9d9;
+}
+
+.products-table th,
+.products-table td {
+  padding: 1rem 0.75rem 1rem 0;
+  text-align: center;
+}
+
+.products-table th:first-child,
+.products-table td:first-child {
+  padding: 1rem 0.75rem;
   text-align: center;
 }
